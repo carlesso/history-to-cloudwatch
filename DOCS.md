@@ -1,5 +1,6 @@
-# history-to-cloudwatch
-A simple Home Assistant add-on that periodically, at the top of the hour, sends sensor data to CloudWatch.
+# History to Cloudwatch 
+This addon will send the data of you sensors to [AWS CloudWatch](https://aws.amazon.com/cloudwatch/) as metrics.
+
 
 ## Configuration
 * `sensors`: list of sensors to monitor, comma separated. Currently tested with temperature and humidity sensors.

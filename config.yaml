@@ -1,0 +1,24 @@
+name: "History to Cloudwatch"
+description: "Periodically sends selected sensors stats to CloudWatch"
+version: "1.0.0"
+slug: "history-to-cloudwatch"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+init: false
+homeassistant_api: true
+options:
+  sensors:
+  cloudwatch-namespace: Home Assistant
+  aws-access-key:
+  aws-secret-key:
+  aws-region: us-west-2
+schema:
+  sensors: str?
+  cloudwatch-namespace: str
+  aws-access-key: password
+  aws-secret-key: password
+  aws-region: str
